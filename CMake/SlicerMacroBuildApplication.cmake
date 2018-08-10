@@ -443,6 +443,7 @@ macro(slicerMacroBuildApplication)
     )
 
   if(APPLE)
+    message("Slicer_MAIN_PROJECT_VERSION_FULL [${Slicer_MAIN_PROJECT_VERSION_FULL}]")
     set(link_flags "-Wl,-rpath,@loader_path/../")
     set_target_properties(${slicerapp_target}
       PROPERTIES
